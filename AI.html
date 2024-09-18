@@ -14,25 +14,28 @@
       margin: 0;
       padding: 0;
     }
-    #image{
-      width: 4000px;
+    #img{
+      z-index: -1;
     }
   </style>
 </head>
-<body>
+<body class="relative bg-white overflow-x-hidden">
   <div class="flex justify-end p-10">
     <nav class="flex items-center space-x-6 pr-20">
-      <a href="" class="font-serif">Home</a>
-      <a href="" class="">Demo</a>
-      <a href="" class="">Pricing</a>
-      <a href="" class="">Testimonials</a>
+      <a href="" class="text-white">Home</a>
+      <a href="" class="text-white">Demo</a>
+      <a href="" class="text-white">Pricing</a>
+      <a href="" class="text-white">Testimonials</a>
     </nav>
-    <button class="w-32 h-13 rounded-full bg-gray-600">sign in</button>
+    <button class="w-32 h-13 rounded-full bg-white">sign in</button>
   </div>
-  <div class="flex">
+    <div id="img" class="absolute -top-[940px] -right-60">
+      <img src="./Assets/purple background.png" class="h-[2000px] w-[1000px] object-contain" alt="">
+    </div>
+  <div class="flex h-[700px]">
     <div class="ml-40 mt-6 space-y-6">
       <div class="flex items-center bg-white shadow-xl rounded-3xl p-6 w-80">
-        <img src="https://www.shutterstock.com/image-vector/yellow-hand-waving-gesture-icon-600nw-1920154661.jpg" alt="" class="size-14">
+        <img src="https://www.shutterstock.com/image-vector/yellow-hand-waving-gesture-icon-600nw-1920154661.jpg" alt="" class="size-14 ">
          <h2 class="text-gray-400 text-2xl">welcome to AI-verse</h2>
       </div>
       <div class="pt-14">
@@ -42,11 +45,11 @@
         <p class="text-gray-400">
           Revolutioniz your Busniess with Cutting-Edg AI solutions <br> from AI-verse
         </p>
-        <button class="bg-yellow-400 rounded-lg w-80 h-12 font-semibold mt-14">Get Started with AI-verse</button>
+        <button class="bg-yellow-400 rounded-lg shadow-md w-80 h-12 font-semibold mt-14 hover:bg-yellow-500">Get Started with AI-verse</button>
       </div>
     </div>
     <div class="ml-80 mt-16">
-      <img src="./Assets/Dashboard Complete.png" id="image"  class="" alt="">
+      <img src="./Assets/Dashboard Complete.png" id="image"  class="relative bottom-32  h-[1000px] w-[900px] object-contain" alt="">
     </div>
   </div>
   <div class="space-y-14">
@@ -119,7 +122,7 @@
         <h2 class="text-white">Annually</h2>
       </div>
     </div>
-    <div class="flex justify-center space-x-8 mt-20">
+    <div class="flex justify-center max-md:flex-wrap space-x-8 mt-20">
       <div class="flex flex-col items-left bg-white shadow-2xl rounded-2xl p-6 h-fit space-y-3 xl:pr-14 xl:pl-10">
         <h1 >Basic</h1>
         <h1 class="text-3xl">$25/mth</h1>
@@ -172,9 +175,9 @@
     <h1 class="text-blue-700 text-center text-xl"> Testimonials</h1>
     <h1 class="font-bold text-5xl m-auto">What Our Customers Say</h1>
   </div>
-  <div class="flex items-center mt-14 justify-around mb-16">
+  <div class="flex items-center flex-wrap mt-14 justify-around mb-16">
     <i class="fa-solid fa-arrow-left bg-blue-600 p-8 h-fit rounded-xl" style="color: #f9fafb;"></i>
-    <div class="flex items-center space-x-8">
+    <div class="flex items-center flex-wrap space-x-8">
       <div class="flex flex-col justify-center bg-white shadow-2xl rounded-2xl p-10">
         <div class="flex items-center space-x-6 pb-8 border-b-4 border-gray-300 space-y-6">
           <img src="./Assets/Images/testimonial 1.png" class="border-solid-2" alt="">
